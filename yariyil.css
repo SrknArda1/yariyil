@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #ffffff;
+    --hd-color: #8b1a2b;
+    --acc-color: #8b1a2b;
+    --text-color: #333333;
+    --border-color: #75A9B1;
+    --section-gap: 80px;        
+}
+.baslik h1 {
+    color: var(--acc-color);
+    border-left: 10px solid var(--border-color);
+    padding: 0px 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.baslik-1 {
+    padding: 5px ;
+    transition: all 0.3s ease;
+}
+.baslik-1:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+}
+.icerik {
+    display: none;
+    font-size: 15px;
+}
+.baslik h1 i {
+    transition: transform 0.3s ease;
+}
