@@ -6,10 +6,15 @@
     --border-color: #75A9B1;
     --section-gap: 80px;        
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .baslik h1 {
     color: var(--acc-color);
     border-left: 10px solid var(--border-color);
-    padding: 0px 20px;
+    padding: 0px 50px 0px 15px;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,10 +23,62 @@ body {
 .baslik-1 {
     padding: 5px ;
     transition: all 0.3s ease;
+     display: block;
 }
+.yuvarlaklar {
+    display: flex;
+    gap: 20px;
+}
+.icerik-butonlar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
 .baslik-1:hover {
     cursor: pointer;
     transform: translateX(10px);
+}
+.baslik-satiri {
+    display: flex;         
+    align-items: center;    
+    gap: 20px;
+}
+.yuvarlak i{
+    width: 20px;
+    padding: 23px;
+    background-color: var(--acc-color);
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+}
+.icerik ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #444;
+}
+
+.icerik p {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.icerik-butonlar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.icerik-butonlar span {
+    font-size: 14px;
+    font-weight: 600;
 }
 .icerik {
     display: none;
@@ -31,32 +88,4 @@ body {
 .baslik h1 i {
     transition: transform 0.3s ease;
 }
-table {
-    text-align: left;
-    margin-bottom: var(--section-gap);
-    overflow-x: auto;
-}
-table th {
-    background-color: var(--hd-color);  
-    color: white;
-    padding: 15px 20px;
-    text-align: left;
-    font-size: 16px;
-}
-table td {
-    padding: 12px 20px;
-    font-size: 15px;
-    color: var(--text-color);
-    border-bottom: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-table tr:nth-child(even) {
-    background-color: #F2F2F2;   
-}
-table tr:nth-child(odd) {
-    background-color: #ffffff;   
-}
-table tr:hover {
-    background-color: #fde8ea;   
-}
+
