@@ -89,3 +89,11 @@ body {
     transition: transform 0.3s ease;
 }
 
+.icerik-butonlar a:hover {
+    color: var(--acc-color);
+    cursor: pointer;
+}
+
+.icerik-butonlar a:hover .yuvarlak i {
+    background-color: var(--border-color);
+}
